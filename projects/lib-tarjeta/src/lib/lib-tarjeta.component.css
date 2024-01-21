@@ -1,6 +1,7 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
+
 #tarjeta {
     width: 326px;
     height: 140px;
@@ -12,23 +13,50 @@
 }
 
 #characterImage {
+    background: url("resources/images/character.png"), lightgray 50% / cover no-repeat;
     width: 140px;
-    height: 140px;
+    height: 139px;
     left: 0px;
     top: 0px;
     position: absolute;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background: url("resources/images/character.png"), lightgray 50% / cover no-repeat;
+}
+
+#ellipseImage {
+    background: url("resources/images/Ellipse 1.png"), lightgray 100% / cover no-repeat;
+    width: 30px;
+    height: 30px;
+    left: 101px;
+    top: 105px;
+    position: absolute;
+    border-radius: 9999px;
+}
+
+#containerStar {
+    width: 18px;
+    height: 18px;
+    left: 107px;
+    top: 111px;
+    position: absolute;
 }
 
 #star {
-    width: 16.72px;
+    width: 18px;
     height: 18px;
-    left: 0.64px;
-    top: -0px;
+    flex-shrink: 0;
     position: absolute;
-    background: #828282;
-    background: url("resources/images/star 1.png");
+    top: 20%;
+    left: 20%;
+    background: url("resources/images/star 1.jpg"), lightgray 100% / cover no-repeat;
+}
 
+#starY {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background: url("resources/images/star yellow.jpg"), lightgray 100% / cover no-repeat;
 }

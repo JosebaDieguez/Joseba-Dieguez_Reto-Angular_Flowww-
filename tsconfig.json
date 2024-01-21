@@ -9,9 +9,6 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "libHeader": [
-        "./dist/lib-header"
-      ],
       "libTarjeta": [
         "./dist/lib-tarjeta"
       ]
