@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LibTarjetaService } from './lib-tarjeta.service';
+import { Character } from './classes/character';
+import { HttpResponse } from '@angular/common/http';
 
 @Component({
   selector: 'lib-libTarjeta',
@@ -15,10 +18,24 @@ export class LibTarjetaComponent implements OnInit {
       this.showFav = true;
     }
   }
-
-  constructor() { }
+  characters: any = {};
+  character: Character;
+  constructor(
+    private servicio: LibTarjetaService) {
+  }
 
   ngOnInit() { 
+    this.servicio.getCharacters().subscribe({
+      next: (data: HttpResponse<Array<Character>>) => {
+        this.characters = data.body;
+        this.character = this.characters.results[0];
+        // document.getElementById('characterImage').setAttribute('style','background: url("' + this.character.image +'"), lightgray 50% / cover no-repea');
+        console.log(this.character);
+      },
+      error: (err) => {
+        this.characters = [];
+      },
+    });
   }
 
 }

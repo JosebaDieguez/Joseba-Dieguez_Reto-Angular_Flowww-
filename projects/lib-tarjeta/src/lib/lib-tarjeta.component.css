@@ -3,7 +3,7 @@
 @import "primeicons/primeicons.css";
 
 #characterImage {
-    background: url("resources/images/character.png"), lightgray 50% / cover no-repeat;
+    background: url("https://rickandmortyapi.com/api/character/avatar/1.jpeg"), lightgray 50% / cover no-repeat;
     width: 140px;
     height: 139px;
     left: 0px;
