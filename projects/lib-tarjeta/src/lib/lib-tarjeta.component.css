@@ -1,16 +1,6 @@
-@import "primeng/resources/themes/lara-light-blue/theme.css";
+
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
-
-#tarjeta {
-    width: 326px;
-    height: 140px;
-    flex-shrink: 0;
-    border: 1px solid #ccc !important;
-    border-radius: 10px;
-    padding-bottom: 140px;
-    padding-right: 20px;
-}
 
 #characterImage {
     background: url("resources/images/character.png"), lightgray 50% / cover no-repeat;
@@ -31,14 +21,6 @@
     top: 105px;
     position: absolute;
     border-radius: 9999px;
-}
-
-#containerStar {
-    width: 18px;
-    height: 18px;
-    left: 107px;
-    top: 111px;
-    position: absolute;
 }
 
 #star {
